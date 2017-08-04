@@ -3,14 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML5Game</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-    <link rel="stylesheet" href="CSS/Styling.css">
-    <script type="text/Javascript" src="Javascript/App.js"></script>
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/Javascript" src="javascript/sprite.js"></script>
   </head>
   <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
-  </body>
-  <footer>
+    <script type="text/javascript">
+    var
+    canvas,
+    ctx,
+    width,
+    height,
+    frames = 0,
+    score = 0,
+    best = 0,
 
-  </footer>
+    currentstate,
+    states = {
+        Splash: 0, Game: 1, Score: 2
+    },
+    bird = {},
+    pipes = {};
+
+    function main() {
+            canvas = document.createElement("canvas");
+
+            width = window.innerWidth;
+            heigth = window.innerHeigth;
+                if (width >= 500) {
+                      width = 320;
+                      heigth = 480;
+                      canvas.style.border = "1xp solid #000";
+                }
+            canvas.width = width;
+            canvas.heigth = heigth;
+            ctx = canvas.getContext("2d");
+            document.body.appendChild(canvas);
+          }
+
+            function run() {
+
+            }
+            function update() {
+
+            }
+            function render() {
+
+            }
+    main();
+
+    </script>
+  </body>
 </html>

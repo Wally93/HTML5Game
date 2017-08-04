@@ -23,18 +23,12 @@ function main() {
                   width = 320;
                   heigth = 480;
                   canvas.style.border = "1xp solid #000";
-        }
+            }
         canvas.width = width;
         canvas.heigth = heigth;
         ctx = canvas.getContext("2d");
         document.body.appendChild(canvas);
-
-        var img = new  Image();
-        img.onload = function() {
-          console.log("test");
-        };
-        img.src = "res/sheet.png";
-}
+      }
 
         function run() {
 
@@ -45,3 +39,4 @@ function main() {
         function render() {
 
         }
+main();
