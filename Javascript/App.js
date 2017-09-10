@@ -22,7 +22,7 @@ function main() {
             if (width >= 500) {
                   width = 320;
                   heigth = 480;
-                  canvas.style.border = "1xp solid #000";
+                  canvas.style.border = "1px solid #000";
             }
         canvas.width = width;
         canvas.heigth = heigth;
